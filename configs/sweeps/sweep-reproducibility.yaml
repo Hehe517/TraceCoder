@@ -1,0 +1,20 @@
+name: Reproducibility Experiment
+program: main.py
+method: grid
+metric:
+  name: val.all.f1_micro
+  goal: maximize
+parameters:
+  metrics:
+    value: reproducibility 
+  experiment:
+    values:
+      - mimiciii_50/plm_icd
+      - mimiciii_full/plm_icd
+
+command:
+  - ${env}
+  - python
+  - ${program}
+  - gpu=-1
+  - ${args_no_hyphens}

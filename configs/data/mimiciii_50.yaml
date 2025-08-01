@@ -1,0 +1,9 @@
+defaults:
+  - defaults
+dir: /path/to/mimiciii_50
+data_filename: mimiciii_50.feather
+split_filename: mimiciii_50_splits.feather
+code_column_names:
+  - icd9_diag
+  - icd9_proc
+max_length: 5120

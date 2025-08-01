@@ -1,0 +1,10 @@
+name: HuggingFaceTokenizer
+configs:
+  model_path: /path/to/PLM
+
+  add_special_token: true
+  padding: false
+  use_fast: true
+  do_lower_case: true
+  max_length: null
+  truncation: false
